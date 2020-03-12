@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (Nome,Cognome,Matricola) Mauro Manca 65519 -->
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="rosso">#ff0000</color>
+    <color name="verde">#0fbf15</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0b1de0</color>
+    <color name="dark_grey">#454545</color>
+    <color name="light_blue">#0f6dd9</color>
+</resources>

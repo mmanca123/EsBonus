@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (Nome,Cognome,Matricola) Mauro Manca 65519 -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Registrazione"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- DATI -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputUserName"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="30dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputPassword"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="textPassword"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conferma Password"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputConfPassword"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="textPassword"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Città Di Provvenienza"
+                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputCitta"
+                android:inputType="textPassword"
+                android:textSize="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:hint="es. Cagliari"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <!-- Data di nascita -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data di nascita:"
+                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputData"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp"
+                android:inputType="date"
+                android:hint="es. 01/01/1995"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:background="@drawable/button_background_1"
+                android:layout_marginHorizontal="50dp"
+                android:id="@+id/RegisterButton"
+                android:text="REGISTRATI"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

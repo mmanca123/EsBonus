@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- (Nome,Cognome,Matricola) Mauro Manca 65519 -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="36dp" />
+
+        <!-- Messaggio di errore -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ERRORE"
+            android:id="@+id/errorText"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:visibility="gone"
+            android:background="@color/rosso" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <!-- Nome -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputUserName"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="30dp"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputPassword"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="textPassword"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/button_background_1"
+            android:layout_marginHorizontal="50dp"
+            android:id="@+id/LoginButton"
+            android:text="ACCEDI"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuovo Utente?Registrati"
+            android:textAlignment="center"
+            android:id="@+id/registrationLink"
+            android:textColor="@color/blue"
+            android:linksClickable="true"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
